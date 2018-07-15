@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Model\Question;
 use App\Http\Resources\QuestionResource;
 
+use Response;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class QuestionController extends Controller
 {
@@ -78,6 +80,8 @@ class QuestionController extends Controller
     public function update(Request $request, Question $question)
     {
         //
+        $question->update($request->all());
+        return response('Update',202);
     }
 
     /**
