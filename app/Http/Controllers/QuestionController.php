@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Model\Question;
 use App\Http\Resources\QuestionResource;
 
-use Response;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
